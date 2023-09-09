@@ -1,0 +1,278 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: "Lato", sans-serif;
+  color: #777;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    top: 0;
+    background-color: white;
+    gap: 1%;
+}
+
+.title{
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    color: #111;
+}
+
+.small-img{
+    text-align: center;
+    opacity: 65%; 
+    margin: auto 5px;
+}
+
+.small-img:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.small-img img{
+    width: 30px;
+    border-radius: 10%;
+}
+
+.small{ 
+    margin: -3%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.bgimg-1 , .bgimg-2, .bgimg-3 , .bgimg-4 {
+  content: "";
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg");
+  min-height: 100%;
+}
+
+
+
+.bgimg-2 {
+  background-image: url("https://img.freepik.com/premium-photo/summer-sand-beach-with-coconut-palm-leaves-foreground_252965-1106.jpg") ;
+  min-height: 100%;
+}
+
+
+
+.bgimg-3 {
+  background-image: url("https://img.freepik.com/free-vector/realistic-old-paper-texture-with-empty-space_52683-74455.jpg?w=2000");
+  min-height: 100%;
+}
+
+.bgimg-4 {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Desert-Desktop-Wallpapers.jpg");
+  min-height: 100%;
+}
+
+.caption {
+  /* position: absolute;
+  left: 0;
+  top: 50%; */
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.caption h1{
+  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}
+
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+.content img{
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+  border-radius: 5px; 
+}
+
+
+
+
+/**/
+.container1 img , .container2 img{
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.text1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 27rem;
+  left: 5rem; 
+}
+
+.text2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 12rem;
+  left: 6rem; 
+}
+
+.container1:hover , .container2:hover {
+  cursor: pointer;
+}
+
+.container1:hover img , .container2:hover img {
+  opacity: 0.3;
+}
+
+.container1:hover .text1 , .container2:hover .text2 {
+  opacity: 1;
+}
+
+.text1 , .text2 {
+  color: black ;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 2rem;
+}
+
+/**/
+
+.content{
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+
+.description{
+  background-color: #C5DFF8;
+  opacity:70%;
+  width: 70%;  
+  padding: 10px;
+  text-align: left;
+  font-size: 1.3rem;
+  margin: auto;
+}
+
+.description h3{
+  margin-top: 0px;
+  color: #272829;
+}
+
+.description p{
+  font-family: 'Cantarell', sans-serif;
+  color: black;
+}
+
+.images{
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.gallery {
+  margin: 5px;
+  float: left;
+  width: 25%;
+}
+
+.images  .gallery  img {
+  width: 100%;
+  height: 250px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.gallery img:hover{
+  transform: translateY(-20px);
+}
+
+#beach .description , h1{
+  color: #111;
+}
+
+#beach .description > h3{
+  color: #272829;
+}
+
+
+.bgimg-3 h3{
+  color: #272829
+}
+
+.bgimg-3 p{
+  color: #111;
+}
+
+.his_img p{
+  font-family: 'Cantarell', sans-serif;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+
+.his_img img{
+  transition: all .5s;
+}
+.his_img img:hover{
+  transform: scale(1.2);
+}
+
+
+.city{
+  display:flex;
+  justify-content: space-around;
+}
+  
+.card {
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 20rem;
+  border-radius: 5%;
+}
+  
+.card > img{
+  width:100%;
+  height: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.card p{
+  font-family: 'Cantarell', sans-serif;
+  font-size: 1.5rem;
+  color: #111;
+  margin: 0px;
+}
+.card:hover{
+  transform: translateY(-20px);
+}
